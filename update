@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git pull origin master
+
+rsync --exclude ".git/" --exclude "update" -av --no-perms . ~
+
